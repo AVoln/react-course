@@ -11,10 +11,10 @@ export const Navbar = ({ className }: INavbarProps) => {
   return (
     <div className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.links}>
-        <AppLink to={"/"} theme={AppLinkTheme.PRIMARY}>
+        <AppLink to="/" theme={AppLinkTheme.PRIMARY}>
           Главная
         </AppLink>
-        <AppLink to={"/about"} theme={AppLinkTheme.INVERTED}>
+        <AppLink to="/about" theme={AppLinkTheme.INVERTED}>
           О сайте
         </AppLink>
       </div>
