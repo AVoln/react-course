@@ -10,14 +10,7 @@ interface INavbarProps {
 export const Navbar = ({ className }: INavbarProps) => {
   return (
     <div className={classNames(cls.navbar, {}, [className])}>
-      <div className={cls.links}>
-        <AppLink to="/" theme={AppLinkTheme.PRIMARY}>
-          Главная
-        </AppLink>
-        <AppLink to="/about" theme={AppLinkTheme.INVERTED}>
-          О сайте
-        </AppLink>
-      </div>
+      <div className={cls.links}>/</div>
     </div>
   );
 };
