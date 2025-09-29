@@ -1,4 +1,3 @@
-import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./Sidebar.module.scss";
 import { useState } from "react";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
@@ -9,6 +8,7 @@ import { RoutePath } from "shared/config/routeConfig/routeConfig";
 import MainIcon from "shared/assets/icons/main.svg";
 import AboutIcon from "shared/assets/icons/about.svg";
 import { useTranslation } from "react-i18next";
+import { classNames } from "shared/lib/classNames/classNames";
 
 interface ISidebarProps {
   className?: string;
