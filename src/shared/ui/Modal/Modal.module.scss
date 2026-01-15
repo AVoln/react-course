@@ -5,8 +5,14 @@
   left: 0;
   right: 0;
   opacity: 0;
+  color: var(--primary-color);
   pointer-events: none;
   z-index: -1;
+}
+
+.modal.dark {
+  --bg-color: #414142;
+  --primary-color: #5f0;
 }
 
 .overlay {
