@@ -28,9 +28,7 @@ export const Navbar = ({ className }: INavbarProps) => {
       </Button>
 
       <Modal isOpen={isAuthModal} onClose={onTogleModal}>
-        asdasd adssada asdasdas asdasd asdasd adssada asdasdas asdasd asdasd
-        adssada asdasdas asdasd asdasd adssada asdasdas asdasd asdasd adssasdas
-        asdasd asdasd adssada asdasdas asdasd asdasd adssada asdasdas asdasd
+        Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки
       </Modal>
     </div>
   );
