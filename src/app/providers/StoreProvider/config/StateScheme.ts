@@ -1,5 +1,5 @@
-export interface ICounterState {
-  value: number;
-}
+import { ICounterScheme } from "app/entities/Counter/model/types/counterScheme";
 
-export interface IStateScheme {}
+export interface IStateScheme {
+  counter: ICounterScheme;
+}
