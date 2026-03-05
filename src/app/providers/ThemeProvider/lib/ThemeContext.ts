@@ -6,8 +6,8 @@ export interface IThemeContextProps {
 }
 
 export enum Theme {
-  LIGHT = "light",
-  DARK = "dark",
+  LIGHT = "app-light-theme",
+  DARK = "app-dark-theme",
 }
 
 export const ThemeContext = createContext<IThemeContextProps>({});

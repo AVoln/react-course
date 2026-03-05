@@ -39,7 +39,7 @@ export const Modal = ({
         closeHandler();
       }
     },
-    [closeHandler]
+    [closeHandler],
   );
 
   const onContentClick = (e: React.MouseEvent) => {
@@ -60,7 +60,6 @@ export const Modal = ({
   const mods: Record<string, boolean> = {
     [cls.opened]: isOpen,
     [cls.isClosing]: isClosing,
-    [cls[theme]]: true,
   };
 
   return (
