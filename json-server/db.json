@@ -24,7 +24,9 @@
       "id": "5",
       "title": "another title",
       "views": 200
-    },
+    }
+  ],
+  "users": [
     {
       "username": "admin",
       "password": "123",
