@@ -13,5 +13,8 @@
   "О сайте": "About",
   "Войти": "Enter",
   "Имя": "Name",
-  "Пароль": "Password"
+  "Пароль": "Password",
+  "Выйти": "Exit",
+  "Форма авторизации": "Autorisation form",
+  "Неверный логин или пароль": "Incorrect login or password"
 }
