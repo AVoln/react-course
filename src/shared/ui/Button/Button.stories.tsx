@@ -65,6 +65,14 @@ export const OutlinedSizeXL: Story = {
   },
 };
 
+export const Disabled: Story = {
+  args: {
+    children: ">",
+    theme: ButtonTheme.OUTLINE,
+    disabled: true
+  },
+};
+
 export const OutlinedDark: Story = {
   args: {
     children: "Text",
@@ -114,6 +122,15 @@ export const SquareSizeXL: Story = {
     theme: ButtonTheme.BACKGROUND_INVERTED,
     square: true,
     size: ButtonSize.XL
+  },
+  decorators: [ThemeDecorator(Theme.DARK)],
+};
+
+export const DisabledDark: Story = {
+  args: {
+    children: ">",
+    theme: ButtonTheme.OUTLINE,
+    disabled: true
   },
   decorators: [ThemeDecorator(Theme.DARK)],
 };

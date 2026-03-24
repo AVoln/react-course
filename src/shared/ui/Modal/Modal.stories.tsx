@@ -13,14 +13,14 @@ const meta: Meta<typeof Modal> = {
 export default meta;
 type Story = StoryObj<typeof Modal>;
 
-export const Primary: Story = {
+export const modalPrimary: Story = {
   args: {
     isOpen: true,
     children: "Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки"
   },
 };
 
-export const Dark: Story = {
+export const modalDark: Story = {
   args: {
     isOpen: true,
     children: "Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки Текст модалки"
