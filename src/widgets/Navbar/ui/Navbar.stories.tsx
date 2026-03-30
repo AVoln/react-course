@@ -4,6 +4,7 @@ import "app/styles/index.scss";
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/ThemeProvider";
 import { Navbar } from "./Navbar";
+import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
 
 const meta: Meta<typeof Navbar> = {
   title: "widget/Navbar",
@@ -17,9 +18,30 @@ type Story = StoryObj<typeof Navbar>;
 
 export const Light: Story = {
   args: {},
+  decorators: [ThemeDecorator(Theme.LIGHT), StoreDecorator({})],
 };
 
 export const Dark: Story = {
   args: {},
-  decorators: [ThemeDecorator(Theme.DARK)],
+  decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({})],
+};
+
+export const AuthNavbarLight: Story = {
+  args: {},
+  decorators: [
+    ThemeDecorator(Theme.LIGHT),
+    StoreDecorator({
+      user: { authData: {} },
+    }),
+  ],
+};
+
+export const AuthNavbarDark: Story = {
+  args: {},
+  decorators: [
+    ThemeDecorator(Theme.DARK),
+    StoreDecorator({
+      user: { authData: {} },
+    }),
+  ],
 };
