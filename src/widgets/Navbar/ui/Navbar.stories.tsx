@@ -25,23 +25,3 @@ export const Dark: Story = {
   args: {},
   decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({})],
 };
-
-export const AuthNavbarLight: Story = {
-  args: {},
-  decorators: [
-    ThemeDecorator(Theme.LIGHT),
-    StoreDecorator({
-      user: { authData: {} },
-    }),
-  ],
-};
-
-export const AuthNavbarDark: Story = {
-  args: {},
-  decorators: [
-    ThemeDecorator(Theme.DARK),
-    StoreDecorator({
-      user: { authData: {} },
-    }),
-  ],
-};

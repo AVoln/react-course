@@ -5,7 +5,7 @@ interface ILoaderProps {
   className?: string;
 }
 
-export const Loader = ({ className }: ILoaderProps) => {
+export const Loader = ({ className = "" }: ILoaderProps) => {
   return (
     <div className={classNames("lds-ellipsis", {}, [className])}>
       <div>1</div>

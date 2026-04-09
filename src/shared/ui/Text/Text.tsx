@@ -15,7 +15,7 @@ interface ITextProps {
 }
 
 export const Text = ({
-  className,
+  className = "",
   text,
   title,
   theme = TextTheme.PRIMARY,
