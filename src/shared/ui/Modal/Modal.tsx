@@ -15,9 +15,9 @@ interface IModalProps {
 const ANIMATION_DELAY = 200;
 
 export const Modal = ({
-  className,
+  className = "",
   children,
-  isOpen,
+  isOpen = false,
   onClose,
   lazy,
 }: IModalProps) => {

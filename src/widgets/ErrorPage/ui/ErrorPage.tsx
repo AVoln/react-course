@@ -7,7 +7,7 @@ interface IErrorPageProps {
   className?: string;
 }
 
-export const ErrorPage = ({ className }: IErrorPageProps) => {
+export const ErrorPage = ({ className = "" }: IErrorPageProps) => {
   const { t } = useTranslation();
   const reloadPage = () => {
     location.reload();

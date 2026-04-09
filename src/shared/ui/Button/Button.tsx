@@ -25,12 +25,12 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<IButtonProps> = ({
-  className,
+  className = "",
   children,
-  theme,
-  square,
-  size,
-  disabled,
+  theme = ButtonTheme.OUTLINE,
+  square = false,
+  size = ButtonSize.M,
+  disabled = false,
   ...otherProps
 }) => {
   const mods: Record<string, boolean> = {
