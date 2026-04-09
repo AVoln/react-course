@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "ignoreDeprecations": "6.0",
-    "rootDir": "./src",
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "esnext",
@@ -14,8 +12,7 @@
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
-    },
-    "types": ["node", "jest", "@testing-library/jest-dom"]
+    }
   },
   "ts-node": {
     "compilerOptions": {
