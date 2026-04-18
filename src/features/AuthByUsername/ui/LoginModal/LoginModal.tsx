@@ -10,7 +10,7 @@ interface ILoginModalProps {
 }
 
 export const LoginModal = ({
-  className,
+  className = "",
   isOpen,
   onClose,
 }: ILoginModalProps) => {

@@ -1,6 +1,7 @@
 .lds-ellipsis,
 .lds-ellipsis div {
   box-sizing: border-box;
+  color: "transparent";
 }
 
 .lds-ellipsis {
@@ -18,6 +19,7 @@
   border-radius: 50%;
   background: var(--inverted-bg-color);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  color: "transparent";
 }
 
 .lds-ellipsis div:nth-child(1) {
